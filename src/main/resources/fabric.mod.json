@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "doomer-armorstand",
+  "version": "${version}",
+  "name": "DoomerArmorStand",
+  "description": "Серверный мод на стойки для брони, специально для сервера DoomerCraft",
+  "authors": [
+    "No_KessPen"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "environment": "server",
+  "entrypoints": {
+    "client": [
+      "net.doomer.armorstand.client.DoomerAtmorStandClient"
+    ],
+    "main": [
+      "net.doomer.armorstand.DoomerAtmorStandMod"
+    ]
+  },
+  "mixins": [
+    "DoomerAtmorStand.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.8",
+    "fabric": "*",
+    "minecraft": "1.18.2"
+  }
+}
